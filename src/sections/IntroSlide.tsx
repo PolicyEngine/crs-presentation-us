@@ -120,7 +120,7 @@ const IntroSlide: React.FC = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.6, duration: 0.6 }}
       >
-        Max Ghenis, Vahid Ahmadi
+        Max Ghenis (CEO), Pavel Makarchuk (Economist), Daphne Hansell (Healthcare Analyst)
       </Name>
       <DateText
         initial={{ opacity: 0 }}
