@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/crs-presentation-us/static/css/main.fe99c699.css",
-    "main.js": "/crs-presentation-us/static/js/main.cda185d4.js",
+    "main.css": "/crs-presentation-us/static/css/main.5cc3068c.css",
+    "main.js": "/crs-presentation-us/static/js/main.b142ca64.js",
     "static/js/453.14c44449.chunk.js": "/crs-presentation-us/static/js/453.14c44449.chunk.js",
-    "static/media/logo.svg": "/crs-presentation-us/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/crs-presentation-us/index.html",
-    "main.fe99c699.css.map": "/crs-presentation-us/static/css/main.fe99c699.css.map",
-    "main.cda185d4.js.map": "/crs-presentation-us/static/js/main.cda185d4.js.map",
+    "main.5cc3068c.css.map": "/crs-presentation-us/static/css/main.5cc3068c.css.map",
+    "main.b142ca64.js.map": "/crs-presentation-us/static/js/main.b142ca64.js.map",
     "453.14c44449.chunk.js.map": "/crs-presentation-us/static/js/453.14c44449.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe99c699.css",
-    "static/js/main.cda185d4.js"
+    "static/css/main.5cc3068c.css",
+    "static/js/main.b142ca64.js"
   ]
 }
