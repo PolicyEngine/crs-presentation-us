@@ -12,6 +12,7 @@ import OpenSourceSlide from './sections/OpenSourceSlide';
 import ModelInnovationsSlide from './sections/ModelInnovationsSlide';
 import DataSlide from './sections/DataSlide';
 import BehavioralResponsesSlide from './sections/BehavioralResponsesSlide';
+import HealthcareSlide from './sections/HealthcareSlide';
 import USPolicyExamplesSlide from './sections/USPolicyExamplesSlide';
 
 const AppContainer = styled.div`
@@ -29,6 +30,7 @@ const slides = [
   { component: ModelInnovationsSlide, name: 'Model Innovations' },
   { component: DataSlide, name: 'Data & Calibration' },
   { component: BehavioralResponsesSlide, name: 'Behavioral Responses' },
+  { component: HealthcareSlide, name: 'Healthcare' },
   { component: USPolicyExamplesSlide, name: 'Policy Examples' },
 ];
 

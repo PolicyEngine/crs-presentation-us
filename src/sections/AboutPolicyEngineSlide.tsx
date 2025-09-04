@@ -215,7 +215,7 @@ const AboutPolicyEngineSlide: React.FC = () => {
             <CardContent>
               <li>Comprehensive federal & state coverage</li>
               <li>Enhanced CPS with ACS integration</li>
-              <li>State and local area calibration</li>
+              <li>State and local area calibration (LA County, NYC)</li>
               <li>Behavioral responses built-in</li>
             </CardContent>
           </Card>
@@ -262,8 +262,8 @@ const AboutPolicyEngineSlide: React.FC = () => {
       {activeTab === 1 && (
         <div style={{ 
           display: 'grid', 
-          gridTemplateColumns: 'repeat(2, 1fr)', 
-          gap: '2rem',
+          gridTemplateColumns: 'repeat(3, 1fr)', 
+          gap: '1.5rem',
           marginTop: '2rem'
         }}>
           <Card
@@ -312,8 +312,8 @@ const AboutPolicyEngineSlide: React.FC = () => {
             }}
           >
             <img 
-              src={`${process.env.PUBLIC_URL}/images/vahid-ahmadi.jpeg`} 
-              alt="Vahid Ahmadi"
+              src={`${process.env.PUBLIC_URL}/images/pavel-makarchuk.jpeg`} 
+              alt="Pavel Makarchuk"
               style={{
                 width: '120px',
                 height: '120px',
@@ -323,15 +323,48 @@ const AboutPolicyEngineSlide: React.FC = () => {
               }}
             />
             <div>
-              <CardTitle>Vahid Ahmadi</CardTitle>
-              <p style={{ fontSize: '0.95rem', opacity: 0.9, marginBottom: '0.5rem' }}>Research Associate</p>
+              <CardTitle>Pavel Makarchuk</CardTitle>
+              <p style={{ fontSize: '0.95rem', opacity: 0.9, marginBottom: '0.5rem' }}>Economist</p>
               <CardContent style={{ listStyle: 'none', padding: 0 }}>
                 <p style={{ lineHeight: 1.6, fontSize: '0.9rem' }}>
-                  Vahid previously served as a pre-doctoral researcher at the Center for Macroeconomics (CFM) at the London 
-                  School of Economics (LSE). He holds a master's degree in Economics from the University of Munich (LMU) 
-                  and a bachelor's degree in Electrical Engineering from the Sharif University of Technology.
+                  Pavel is an economist specializing in tax policy analysis and microsimulation modeling. 
+                  He focuses on evaluating the distributional and revenue impacts of federal and state tax reforms.
                 </p>
-                <p style={{ marginTop: '0.5rem', fontSize: '0.85rem', opacity: 0.8 }}>vahid@policyengine.org</p>
+                <p style={{ marginTop: '0.5rem', fontSize: '0.85rem', opacity: 0.8 }}>pavel@policyengine.org</p>
+              </CardContent>
+            </div>
+          </Card>
+          
+          <Card
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            style={{ 
+              display: 'flex',
+              gap: '1.5rem',
+              alignItems: 'flex-start'
+            }}
+          >
+            <img 
+              src={`${process.env.PUBLIC_URL}/images/daphne-hansell.jpeg`} 
+              alt="Daphne Hansell"
+              style={{
+                width: '120px',
+                height: '120px',
+                borderRadius: '50%',
+                objectFit: 'cover',
+                border: '3px solid #0a4f4f'
+              }}
+            />
+            <div>
+              <CardTitle>Daphne Hansell</CardTitle>
+              <p style={{ fontSize: '0.95rem', opacity: 0.9, marginBottom: '0.5rem' }}>Healthcare Analyst</p>
+              <CardContent style={{ listStyle: 'none', padding: 0 }}>
+                <p style={{ lineHeight: 1.6, fontSize: '0.9rem' }}>
+                  Daphne specializes in healthcare policy analysis, focusing on Medicaid, Medicare, and ACA subsidy programs. 
+                  She models the impacts of healthcare reforms on coverage, costs, and household budgets.
+                </p>
+                <p style={{ marginTop: '0.5rem', fontSize: '0.85rem', opacity: 0.8 }}>daphne@policyengine.org</p>
               </CardContent>
             </div>
           </Card>
