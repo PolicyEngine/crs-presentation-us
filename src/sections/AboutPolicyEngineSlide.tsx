@@ -251,9 +251,6 @@ const AboutPolicyEngineSlide: React.FC = () => {
               <div className="org-box">American Enterprise Institute</div>
               <div className="org-box">Brookings Institution</div>
               <div className="org-box">Economic Policy Institute</div>
-              <div className="org-box">Washington Post</div>
-              <div className="org-box">New York Times</div>
-              <div className="org-box">Stanford Basic Income Lab</div>
             </div>
           </motion.div>
         </TrustLogos>
