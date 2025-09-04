@@ -203,7 +203,7 @@ sim = Simulation(situation={
 
 # Calculate EITC
 eitc = sim.calculate("earned_income_tax_credit", 2024)
-print(f"EITC amount: ${eitc:,.2f}")  # Output: EITC amount: $3,733.00`}</code>
+print(f"EITC amount: $3,733.00")`}</code>
           </CodeBlock>
         </Section>
       )
