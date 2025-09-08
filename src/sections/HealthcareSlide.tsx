@@ -40,7 +40,7 @@ const SubTab = styled(motion.button)<{ active: boolean }>`
   
   &:hover {
     background: rgba(44, 82, 130, 0.3);
-    border-color: #0a4f4f;
+    border-color: #6dd5ed;
   }
 `;
 
@@ -57,7 +57,7 @@ const Section = styled.div`
   
   h2 {
     font-size: 1.8rem;
-    color: #0a4f4f;
+    color: #6dd5ed;
     margin-bottom: 1rem;
   }
   

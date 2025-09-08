@@ -41,7 +41,7 @@ const InnovationCard = styled(motion.div)`
 const CardTitle = styled.h3`
   font-size: 1.6rem;
   margin-bottom: 1rem;
-  color: #0a4f4f;
+  color: #6dd5ed;
 `;
 
 const CardContent = styled.div`
@@ -70,7 +70,7 @@ const CardContent = styled.div`
         content: "→";
         position: absolute;
         left: 0;
-        color: #0a4f4f;
+        color: #6dd5ed;
         font-weight: bold;
       }
     }

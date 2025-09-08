@@ -41,7 +41,7 @@ const Card = styled(motion.div)`
 const CardTitle = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #0a4f4f;
+  color: #6dd5ed;
 `;
 
 const CardContent = styled.ul`
@@ -57,13 +57,13 @@ const CardContent = styled.ul`
       content: "→";
       position: absolute;
       left: 0;
-      color: #0a4f4f;
+      color: #6dd5ed;
     }
   }
 `;
 
 const Highlight = styled(motion.div)`
-  background: linear-gradient(135deg, #0a4f4f, #1a6b6b);
+  background: linear-gradient(135deg, #6dd5ed, #4fb3d4);
   border-radius: 12px;
   padding: 1.5rem;
   margin: 2rem 0;
@@ -281,7 +281,7 @@ const AboutPolicyEngineSlide: React.FC = () => {
                 height: '120px',
                 borderRadius: '50%',
                 objectFit: 'cover',
-                border: '3px solid #0a4f4f'
+                border: '3px solid #6dd5ed'
               }}
             />
             <div>
@@ -316,7 +316,7 @@ const AboutPolicyEngineSlide: React.FC = () => {
                 height: '120px',
                 borderRadius: '50%',
                 objectFit: 'cover',
-                border: '3px solid #0a4f4f'
+                border: '3px solid #6dd5ed'
               }}
             />
             <div>
@@ -350,7 +350,7 @@ const AboutPolicyEngineSlide: React.FC = () => {
                 height: '120px',
                 borderRadius: '50%',
                 objectFit: 'cover',
-                border: '3px solid #0a4f4f'
+                border: '3px solid #6dd5ed'
               }}
             />
             <div>
