@@ -165,43 +165,67 @@ const HealthcareSlide: React.FC = () => {
             </FeatureCard>
           </FeatureGrid>
           
-          <h3>Example: 2024 Premium Contributions by Income</h3>
-          <StateTable>
+          <h3>Impact of IRA Expiration: Texas Household Example</h3>
+          <p style={{ fontSize: '0.95rem', opacity: 0.9, marginBottom: '1rem' }}>
+            Married couple in Austin, TX (ages 25 and 28) - Premium Tax Credit changes when IRA subsidies expire
+          </p>
+          
+          <div style={{ 
+            display: 'flex', 
+            gap: '2rem', 
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            marginBottom: '2rem'
+          }}>
+            <div style={{ flex: '1 1 60%', minWidth: '400px' }}>
+              <StateTable>
             <thead>
               <tr>
-                <th>Income (% of FPL)</th>
-                <th>Max Premium (% of Income)</th>
-                <th>Annual Premium Cap (Family of 4)</th>
-                <th>Monthly Subsidy</th>
+                <th>Annual Income</th>
+                <th>% of FPL</th>
+                <th>PTC with IRA Extension</th>
+                <th>PTC after Expiration</th>
+                <th>Loss in Subsidy</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>150% FPL ($45,000)</td>
-                <td>0%</td>
+                <td>$29,187</td>
+                <td>138%</td>
+                <td>$10,090</td>
+                <td>$9,128</td>
+                <td style={{ color: '#ff6b6b' }}>-$962</td>
+              </tr>
+              <tr>
+                <td>$63,450</td>
+                <td>300%</td>
+                <td>$6,283</td>
+                <td>$4,062</td>
+                <td style={{ color: '#ff6b6b' }}>-$2,221</td>
+              </tr>
+              <tr>
+                <td>$84,600</td>
+                <td>400%</td>
                 <td>$0</td>
-                <td>$1,584</td>
-              </tr>
-              <tr>
-                <td>200% FPL ($60,000)</td>
-                <td>2.0%</td>
-                <td>$1,200</td>
-                <td>$1,484</td>
-              </tr>
-              <tr>
-                <td>300% FPL ($90,000)</td>
-                <td>6.0%</td>
-                <td>$5,400</td>
-                <td>$1,134</td>
-              </tr>
-              <tr>
-                <td>400% FPL ($120,000)</td>
-                <td>8.5%</td>
-                <td>$10,200</td>
-                <td>$734</td>
+                <td>$2,899</td>
+                <td style={{ color: '#4ade80' }}>+$2,899</td>
               </tr>
             </tbody>
           </StateTable>
+            </div>
+            
+            <div style={{ flex: '1 1 35%', minWidth: '300px' }}>
+              <img 
+                src={`${process.env.PUBLIC_URL}/images/austin_aca.png`}
+                alt="Austin ACA Analysis"
+                style={{
+                  width: '100%',
+                  borderRadius: '8px',
+                  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                }}
+              />
+            </div>
+          </div>
         </Section>
       )
     },
