@@ -70,7 +70,7 @@ const DateText = styled(motion.p)`
 `;
 
 const IntroSlide: React.FC = () => {
-  const presentationDate = 'December 2024';
+  const presentationDate = 'September 2025';
   
   return (
     <Container>
