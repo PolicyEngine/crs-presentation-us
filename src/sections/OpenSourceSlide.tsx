@@ -29,7 +29,7 @@ const SubTabs = styled.div`
 
 const SubTab = styled(motion.button)<{ active: boolean }>`
   padding: 0.8rem 1.5rem;
-  border: 2px solid ${props => props.active ? '#0a4f4f' : 'rgba(255, 255, 255, 0.3)'};
+  border: 2px solid ${props => props.active ? '#6dd5ed' : 'rgba(255, 255, 255, 0.3)'};
   background: ${props => props.active ? 'rgba(44, 82, 130, 0.2)' : 'rgba(255, 255, 255, 0.1)'};
   color: white;
   border-radius: 8px;
@@ -86,7 +86,7 @@ const BenefitCard = styled.div`
   background: rgba(255, 255, 255, 0.08);
   padding: 1.2rem;
   border-radius: 8px;
-  border-left: 3px solid #0a4f4f;
+  border-left: 3px solid #6dd5ed;
   
   h4 {
     color: white;
@@ -168,18 +168,18 @@ const OpenSourceSlide: React.FC = () => {
           <h3>Core Components</h3>
           <BenefitGrid>
             <BenefitCard>
-              <h4>PolicyEngine Core</h4>
-              <p>Rules engine that encodes tax and benefit logic. Written in Python for readability and extensibility.</p>
+              <h4>Core Framework</h4>
+              <p>OpenFisca-based foundation providing the computational engine, variable system, and simulation infrastructure. Handles time periods, entities, and formula evaluation.</p>
             </BenefitCard>
             
             <BenefitCard>
-              <h4>OpenFisca Framework</h4>
-              <p>Built on OpenFisca, used by governments worldwide including France, New Zealand, and Tunisia.</p>
+              <h4>Rules Engine</h4>
+              <p>Python-encoded tax and benefit logic with 1,000+ parameters and formulas. Each rule links to legislation, ensuring transparency and maintainability.</p>
             </BenefitCard>
             
             <BenefitCard>
-              <h4>Public APIs</h4>
-              <p>RESTful APIs allow any application to access microsimulation capabilities.</p>
+              <h4>Data Layer</h4>
+              <p>Enhanced CPS/ACS microdata with calibration weights, imputation models, and validation against administrative benchmarks. Covers 300,000+ households.</p>
             </BenefitCard>
           </BenefitGrid>
           
@@ -187,23 +187,50 @@ const OpenSourceSlide: React.FC = () => {
           <CodeBlock>
             <code>{`from policyengine_us import Simulation
 
-# Create a household
-sim = Simulation(situation={
-    "people": {
-        "parent": {"age": 35, "employment_income": 25000},
-        "child": {"age": 10}
-    },
-    "tax_units": {
-        "unit": {
-            "members": ["parent", "child"],
-            "filer_type": "head_of_household"
+def calculate_eitc(employment_income: float, num_children: int = 1) -> float:
+    """Calculate EITC for a household.
+    
+    Args:
+        employment_income: Annual employment income in USD
+        num_children: Number of qualifying children
+        
+    Returns:
+        EITC amount in USD
+    """
+    # Create household structure
+    people = {
+        "parent": {
+            "age": 35,
+            "employment_income": employment_income
         }
     }
-})
+    
+    # Add children to household
+    for i in range(num_children):
+        people[f"child_{i}"] = {"age": 10}
+    
+    # Configure tax unit
+    members = ["parent"] + [f"child_{i}" for i in range(num_children)]
+    
+    sim = Simulation(
+        situation={
+            "people": people,
+            "tax_units": {
+                "unit": {
+                    "members": members,
+                    "filer_type": "head_of_household"
+                }
+            }
+        }
+    )
+    
+    # Calculate EITC for tax year 2024
+    return sim.calculate("earned_income_tax_credit", 2024)
 
-# Calculate EITC
-eitc = sim.calculate("earned_income_tax_credit", 2024)
-print(f"EITC amount: $3,733.00")`}</code>
+# Example usage
+if __name__ == "__main__":
+    eitc_amount = calculate_eitc(employment_income=25_000, num_children=1)
+    print("EITC amount: $" + "{:,.2f}".format(eitc_amount))`}</code>
           </CodeBlock>
         </Section>
       )

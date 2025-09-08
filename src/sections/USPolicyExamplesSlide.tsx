@@ -29,7 +29,7 @@ const ExampleTabs = styled.div`
 
 const Tab = styled(motion.button)<{ active: boolean }>`
   padding: 0.8rem 1.5rem;
-  border: 2px solid ${props => props.active ? '#0a4f4f' : 'rgba(255, 255, 255, 0.3)'};
+  border: 2px solid ${props => props.active ? '#6dd5ed' : 'rgba(255, 255, 255, 0.3)'};
   background: ${props => props.active ? 'rgba(44, 82, 130, 0.2)' : 'rgba(255, 255, 255, 0.1)'};
   color: white;
   border-radius: 8px;
