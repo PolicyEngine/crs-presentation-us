@@ -179,7 +179,7 @@ const OpenSourceSlide: React.FC = () => {
             
             <BenefitCard>
               <h4>Data Layer</h4>
-              <p>Enhanced CPS/ACS microdata with calibration weights, imputation models, and validation against administrative benchmarks. Covers 300,000+ households.</p>
+              <p>Enhanced CPS/ACS microdata with calibration weights, imputation models, and validation against administrative benchmarks.</p>
             </BenefitCard>
           </BenefitGrid>
           

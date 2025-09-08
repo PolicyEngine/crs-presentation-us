@@ -262,8 +262,7 @@ const USPolicyExamplesSlide: React.FC = () => {
               <li><strong>Work Incentives:</strong> Strengthens incentives to work for low-income individuals</li>
             </ul>
             <p style={{ marginTop: '1rem', fontSize: '0.95rem', opacity: 0.9 }}>
-              <strong>Validation:</strong> Our estimates align with CBO projections and Treasury analyses, 
-              with less than 2% variance in total cost and beneficiary counts.
+              <strong>Validation:</strong> Our estimates are designed to align with CBO projections and Treasury analyses.
             </p>
           </TextContent>
         </ContentGrid>

@@ -237,17 +237,17 @@ const DataSlide: React.FC = () => {
           <FeatureGrid>
             <FeatureCard>
               <h4>Coverage Rate</h4>
-              <p>CPS captures 95%+ of total federal program expenditures after calibration</p>
+              <p>Comprehensive coverage of federal program expenditures after calibration</p>
             </FeatureCard>
             
             <FeatureCard>
               <h4>Distributional Accuracy</h4>
-              <p>Income distribution matches tax data across all percentiles within 2% tolerance</p>
+              <p>Income distribution calibrated to match tax data across percentiles</p>
             </FeatureCard>
             
             <FeatureCard>
               <h4>Demographic Precision</h4>
-              <p>Age, race, education, and family structure align with Census benchmarks</p>
+              <p>Demographics aligned with Census benchmarks</p>
             </FeatureCard>
           </FeatureGrid>
           

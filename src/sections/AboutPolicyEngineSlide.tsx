@@ -159,7 +159,12 @@ const AboutPolicyEngineSlide: React.FC = () => {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
-        <h3>Fast, accurate tax-benefit microsimulation</h3>
+        <h3>Our Mission</h3>
+        <p style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>
+          To democratize economic policy analysis by creating a single, comprehensive, 
+          and universally accessible platform for understanding the impact of taxes and 
+          benefits on people's lives.
+        </p>
         <p>Open source platform • Python package • Web app • Since 2021</p>
       </Highlight>
       

@@ -19,9 +19,16 @@ const Title = styled(motion.h1)`
   text-align: center;
 `;
 
-const Grid = styled.div`
+const SubTitle = styled(motion.h2)`
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #6dd5ed;
+`;
+
+const PillarsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 3rem;
   
@@ -30,21 +37,22 @@ const Grid = styled.div`
   }
 `;
 
-const InnovationCard = styled(motion.div)`
+const PillarCard = styled(motion.div)`
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 2rem;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
 `;
 
-const CardTitle = styled.h3`
-  font-size: 1.6rem;
+const PillarTitle = styled.h3`
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: #6dd5ed;
 `;
 
-const CardContent = styled.div`
+const PillarContent = styled.div`
   h4 {
     color: white;
     margin: 1rem 0 0.5rem 0;
@@ -60,6 +68,7 @@ const CardContent = styled.div`
   ul {
     list-style: none;
     padding: 0;
+    text-align: left;
     
     li {
       padding: 0.4rem 0;
@@ -77,6 +86,41 @@ const CardContent = styled.div`
   }
 `;
 
+const InnovationsSection = styled.div`
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+`;
+
+const InnovationGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const InnovationItem = styled.div`
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 3px solid #6dd5ed;
+  
+  h4 {
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    opacity: 0.9;
+    line-height: 1.5;
+    font-size: 0.95rem;
+  }
+`;
+
 const ModelInnovationsSlide: React.FC = () => {
   return (
     <Container>
@@ -85,78 +129,104 @@ const ModelInnovationsSlide: React.FC = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
       >
-        Model Innovations for US Applications
+        Microsimulation Rests on Three Pillars
       </Title>
       
-      <Grid>
-        <InnovationCard
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+      <SubTitle
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+      >
+        PolicyEngine Innovates on Each Pillar
+      </SubTitle>
+      
+      <PillarsGrid>
+        <PillarCard
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          <CardTitle>Advanced Data Integration</CardTitle>
-          <CardContent>
-            <h4>Multi-Survey Fusion</h4>
-            <p>Combines CPS, ACS, and SCF data using machine learning imputation techniques.</p>
+          <PillarTitle>Rules</PillarTitle>
+          <PillarContent>
+            <p>Comprehensive tax-benefit logic</p>
             <ul>
-              <li>Quantile regression forests for distributional accuracy</li>
-              <li>Administrative data calibration at federal and state levels</li>
-              <li>Real-time data updates from Bureau of Labor Statistics</li>
+              <li>Federal income & payroll tax</li>
+              <li>State income tax (all 50 states + DC)</li>
+              <li>SNAP, Medicaid, CHIP, ACA subsidies</li>
+              <li>SSI, WIC, school meals, TANF, CCDF</li>
+              <li>Legislative references & thousands of unit tests</li>
             </ul>
-          </CardContent>
-        </InnovationCard>
+          </PillarContent>
+        </PillarCard>
 
-        <InnovationCard
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+        <PillarCard
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          <CardTitle>Behavioral Responses</CardTitle>
-          <CardContent>
-            <h4>Built-in Labor Supply Effects</h4>
-            <p>Incorporates how policy changes affect work incentives and earnings.</p>
+          <PillarTitle>Dynamics</PillarTitle>
+          <PillarContent>
+            <p>Behavioral response modeling</p>
             <ul>
-              <li>Extensive margin: labor force participation decisions</li>
-              <li>Intensive margin: hours worked adjustments</li>
-              <li>Income effects: consumption and saving responses</li>
+              <li>Labor supply elasticities</li>
+              <li>Extensive margin (participation)</li>
+              <li>Intensive margin (hours worked)</li>
+              <li>Income effects on consumption</li>
+              <li>Adjustable parameters with CBO presets</li>
             </ul>
-          </CardContent>
-        </InnovationCard>
+          </PillarContent>
+        </PillarCard>
 
-        <InnovationCard
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+        <PillarCard
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
-          <CardTitle>Geographic Granularity</CardTitle>
-          <CardContent>
-            <h4>State and Local Precision</h4>
-            <p>Captures variation in taxes, benefits, and cost of living across regions.</p>
+          <PillarTitle>Data</PillarTitle>
+          <PillarContent>
+            <p>Multi-source integration</p>
             <ul>
-              <li>All 50 states plus DC income tax systems</li>
-              <li>Metropolitan area cost-of-living adjustments</li>
-              <li>Local TANF and Medicaid program variations</li>
+              <li>CPS ASEC foundation</li>
+              <li>Integrates IRS PUF, ACS, SCF, SIPP</li>
+              <li>Calibrates to national aggregates</li>
+              <li>CBO-based aging projections</li>
+              <li>Machine learning (QRF) accuracy boost</li>
             </ul>
-          </CardContent>
-        </InnovationCard>
+          </PillarContent>
+        </PillarCard>
+      </PillarsGrid>
 
-        <InnovationCard
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+      <InnovationsSection>
+        <SubTitle
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
         >
-          <CardTitle>Open Source Architecture</CardTitle>
-          <CardContent>
-            <h4>Transparent and Extensible</h4>
-            <p>Community-driven development ensuring accuracy and continuous improvement.</p>
-            <ul>
-              <li>GitHub-based development with public code review</li>
-              <li>Automated testing for all tax-benefit calculations</li>
-              <li>API-first design for integration with external systems</li>
-            </ul>
-          </CardContent>
-        </InnovationCard>
-      </Grid>
+          PolicyEngine's Key Innovations
+        </SubTitle>
+        
+        <InnovationGrid>
+          <InnovationItem>
+            <h4>Geographic Granularity</h4>
+            <p>State and district calibration, metropolitan area cost adjustments, local TANF and Medicaid variations</p>
+          </InnovationItem>
+          
+          <InnovationItem>
+            <h4>Open Source Architecture</h4>
+            <p>18,000+ GitHub commits, transparent methodology, community-driven development, automated testing</p>
+          </InnovationItem>
+          
+          <InnovationItem>
+            <h4>Comprehensive Coverage</h4>
+            <p>All major federal programs and state variations, with continuous updates to match current law</p>
+          </InnovationItem>
+          
+          <InnovationItem>
+            <h4>API-First Design</h4>
+            <p>RESTful APIs allow any application to access microsimulation capabilities</p>
+          </InnovationItem>
+        </InnovationGrid>
+      </InnovationsSection>
     </Container>
   );
 };
