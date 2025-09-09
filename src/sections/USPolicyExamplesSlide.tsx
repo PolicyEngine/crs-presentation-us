@@ -29,7 +29,7 @@ const ExampleTabs = styled.div`
 
 const Tab = styled(motion.button)<{ active: boolean }>`
   padding: 0.8rem 1.5rem;
-  border: 2px solid ${props => props.active ? '#0a4f4f' : 'rgba(255, 255, 255, 0.3)'};
+  border: 2px solid ${props => props.active ? '#6dd5ed' : 'rgba(255, 255, 255, 0.3)'};
   background: ${props => props.active ? 'rgba(44, 82, 130, 0.2)' : 'rgba(255, 255, 255, 0.1)'};
   color: white;
   border-radius: 8px;
@@ -40,7 +40,7 @@ const Tab = styled(motion.button)<{ active: boolean }>`
   
   &:hover {
     background: rgba(44, 82, 130, 0.3);
-    border-color: #0a4f4f;
+    border-color: #6dd5ed;
   }
 `;
 
@@ -62,7 +62,7 @@ const ContentGrid = styled.div<{ $hasImage: boolean }>`
 const TextContent = styled.div`
   h2 {
     font-size: 1.8rem;
-    color: #0a4f4f;
+    color: #6dd5ed;
     margin-bottom: 1rem;
   }
   
@@ -87,7 +87,7 @@ const TextContent = styled.div`
         content: "→";
         position: absolute;
         left: 0;
-        color: #0a4f4f;
+        color: #6dd5ed;
         font-weight: bold;
       }
       
@@ -262,8 +262,7 @@ const USPolicyExamplesSlide: React.FC = () => {
               <li><strong>Work Incentives:</strong> Strengthens incentives to work for low-income individuals</li>
             </ul>
             <p style={{ marginTop: '1rem', fontSize: '0.95rem', opacity: 0.9 }}>
-              <strong>Validation:</strong> Our estimates align with CBO projections and Treasury analyses, 
-              with less than 2% variance in total cost and beneficiary counts.
+              <strong>Validation:</strong> Our estimates are designed to align with CBO projections and Treasury analyses.
             </p>
           </TextContent>
         </ContentGrid>

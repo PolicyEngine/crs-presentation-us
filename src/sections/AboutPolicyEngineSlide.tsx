@@ -41,7 +41,7 @@ const Card = styled(motion.div)`
 const CardTitle = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #0a4f4f;
+  color: #6dd5ed;
 `;
 
 const CardContent = styled.ul`
@@ -57,13 +57,13 @@ const CardContent = styled.ul`
       content: "→";
       position: absolute;
       left: 0;
-      color: #0a4f4f;
+      color: #6dd5ed;
     }
   }
 `;
 
 const Highlight = styled(motion.div)`
-  background: linear-gradient(135deg, #0a4f4f, #1a6b6b);
+  background: linear-gradient(135deg, #6dd5ed, #4fb3d4);
   border-radius: 12px;
   padding: 1.5rem;
   margin: 2rem 0;
@@ -159,7 +159,12 @@ const AboutPolicyEngineSlide: React.FC = () => {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
-        <h3>Fast, accurate tax-benefit microsimulation</h3>
+        <h3>Our Mission</h3>
+        <p style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>
+          To democratize economic policy analysis by creating a single, comprehensive, 
+          and universally accessible platform for understanding the impact of taxes and 
+          benefits on people's lives.
+        </p>
         <p>Open source platform • Python package • Web app • Since 2021</p>
       </Highlight>
       
@@ -281,7 +286,7 @@ const AboutPolicyEngineSlide: React.FC = () => {
                 height: '120px',
                 borderRadius: '50%',
                 objectFit: 'cover',
-                border: '3px solid #0a4f4f'
+                border: '3px solid #6dd5ed'
               }}
             />
             <div>
@@ -316,7 +321,7 @@ const AboutPolicyEngineSlide: React.FC = () => {
                 height: '120px',
                 borderRadius: '50%',
                 objectFit: 'cover',
-                border: '3px solid #0a4f4f'
+                border: '3px solid #6dd5ed'
               }}
             />
             <div>
@@ -350,7 +355,7 @@ const AboutPolicyEngineSlide: React.FC = () => {
                 height: '120px',
                 borderRadius: '50%',
                 objectFit: 'cover',
-                border: '3px solid #0a4f4f'
+                border: '3px solid #6dd5ed'
               }}
             />
             <div>

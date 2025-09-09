@@ -27,7 +27,7 @@ const slides = [
   { component: IntroSlide, name: 'Introduction' },
   { component: AboutPolicyEngineSlide, name: 'About PolicyEngine' },
   { component: OpenSourceSlide, name: 'Open Source' },
-  { component: ModelInnovationsSlide, name: 'Model Innovations' },
+  { component: ModelInnovationsSlide, name: 'Three Pillars' },
   { component: DataSlide, name: 'Data & Calibration' },
   { component: BehavioralResponsesSlide, name: 'Behavioral Responses' },
   { component: HealthcareSlide, name: 'Healthcare' },

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { ImageWithViewer } from '../components/ImageViewer';
 
 const Container = styled.div`
   color: white;
@@ -30,7 +29,7 @@ const SubTabs = styled.div`
 
 const SubTab = styled(motion.button)<{ active: boolean; $monospace?: boolean }>`
   padding: 0.8rem 1.5rem;
-  border: 2px solid ${props => props.active ? '#0a4f4f' : 'rgba(255, 255, 255, 0.3)'};
+  border: 2px solid ${props => props.active ? '#6dd5ed' : 'rgba(255, 255, 255, 0.3)'};
   background: ${props => props.active ? 'rgba(44, 82, 130, 0.2)' : 'rgba(255, 255, 255, 0.1)'};
   color: white;
   border-radius: 8px;
@@ -41,7 +40,7 @@ const SubTab = styled(motion.button)<{ active: boolean; $monospace?: boolean }>`
   
   &:hover {
     background: rgba(44, 82, 130, 0.3);
-    border-color: #0a4f4f;
+    border-color: #6dd5ed;
   }
 `;
 
@@ -58,7 +57,7 @@ const Section = styled.div`
   
   h2 {
     font-size: 1.8rem;
-    color: #0a4f4f;
+    color: #6dd5ed;
     margin-bottom: 1rem;
   }
   
@@ -87,7 +86,7 @@ const FeatureCard = styled.div`
   background: rgba(255, 255, 255, 0.08);
   padding: 1.2rem;
   border-radius: 8px;
-  border-left: 3px solid #0a4f4f;
+  border-left: 3px solid #6dd5ed;
   
   h4 {
     color: white;
@@ -117,7 +116,7 @@ const BulletList = styled.ul`
       content: "→";
       position: absolute;
       left: 0;
-      color: #0a4f4f;
+      color: #6dd5ed;
       font-weight: bold;
     }
   }
@@ -126,7 +125,7 @@ const BulletList = styled.ul`
 const LinkButton = styled.a`
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background: linear-gradient(135deg, #0a4f4f, #1a6b6b);
+  background: linear-gradient(135deg, #6dd5ed, #4fb3d4);
   color: white;
   text-decoration: none;
   border-radius: 25px;
@@ -238,17 +237,17 @@ const DataSlide: React.FC = () => {
           <FeatureGrid>
             <FeatureCard>
               <h4>Coverage Rate</h4>
-              <p>CPS captures 95%+ of total federal program expenditures after calibration</p>
+              <p>Comprehensive coverage of federal program expenditures after calibration</p>
             </FeatureCard>
             
             <FeatureCard>
               <h4>Distributional Accuracy</h4>
-              <p>Income distribution matches tax data across all percentiles within 2% tolerance</p>
+              <p>Income distribution calibrated to match tax data across percentiles</p>
             </FeatureCard>
             
             <FeatureCard>
               <h4>Demographic Precision</h4>
-              <p>Age, race, education, and family structure align with Census benchmarks</p>
+              <p>Demographics aligned with Census benchmarks</p>
             </FeatureCard>
           </FeatureGrid>
           

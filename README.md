@@ -9,8 +9,9 @@ Visit: [https://crs-presentation-us.vercel.app](https://crs-presentation-us.verc
 ## 📊 Features
 
 - **Open-Source Microsimulation**: Transparent, reproducible tax and benefit modeling
-- **US Policy Coverage**: Federal income tax, state taxes, FICA, EITC, CTC, SNAP, TANF, and more
-- **Data Integration**: CPS, ACS, and SCF data with advanced calibration methods
+- **Comprehensive Coverage**: Federal & state income tax, payroll tax, SNAP, Medicaid, CHIP, ACA subsidies, SSI, WIC, school meals, TANF, CCDF
+- **Three Pillars Framework**: Rules (tax-benefit logic), Dynamics (behavioral responses), Data (multi-source integration)
+- **Data Integration**: CPS ASEC foundation, integrates IRS PUF, ACS, SCF, SIPP with CBO-based aging
 - **Impact Analysis**: Distributional effects, poverty impacts, state-by-state breakdowns
 - **Interactive Demos**: Live PolicyEngine US calculator demonstrations
 
@@ -20,14 +21,14 @@ Visit: [https://crs-presentation-us.vercel.app](https://crs-presentation-us.verc
    - Open-source platform overview
    - Mission and transparency principles
 
-2. **Model Capabilities**
-   - Federal and state tax systems
-   - Benefit programs (SNAP, TANF, WIC, Section 8)
-   - Tax credits (EITC, CTC, CDCTC)
+2. **Three Pillars of Microsimulation**
+   - Rules: Comprehensive tax-benefit logic
+   - Dynamics: Labor supply elasticities and behavioral responses
+   - Data: Multi-source integration with machine learning
 
 3. **Data & Methods**
-   - Survey integration (CPS, ACS, SCF)
-   - Calibration techniques
+   - Survey integration (CPS ASEC, IRS PUF, ACS, SCF, SIPP)
+   - CBO-based aging and calibration techniques
    - Validation against administrative data
 
 4. **Policy Examples**
