@@ -89,3 +89,7 @@ MIT License - Open source for transparency and collaboration
 ## 🙏 Acknowledgments
 
 Built by PolicyEngine for presentation to the Congressional Research Service, demonstrating our commitment to transparent, accessible policy analysis tools for government and researchers.
+
+## License
+
+Code in this repository is released under the [MIT License](LICENSE). Original text and figures are released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) with attribution to PolicyEngine. Third-party data and materials keep their own terms.
